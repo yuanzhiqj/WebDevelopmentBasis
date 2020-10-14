@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script>
+        function login(){
+            var userid = document.loginForm.userid.value;
+            var pass = document.loginForm.pass.value;
+            if(userid == "a"&&pass == "a") {
+                alert("登录成功");
+                window.location.href="list.html";
+                return true;
+            }
+            else
+                return false;
+        }
+    </script>
+</head>
+<body>
+    <form name="loginForm" action="list.html" onsubmit="return true">
+        <input type="text" name="userid" placeholder="用户名">
+        <br/>
+        <input type="password" name="pass" placeholder="密码">
+        <br/>
+        <input type="button" value="登录" onclick="login()">
+        <a href="register.html"><INPUT name="registerButton" id="Button" type="button" value="注册"></a>
+    </form>
+</body>
+</html>
