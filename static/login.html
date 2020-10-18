@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/board.css">
     <meta charset="UTF-8">
     <title>Login</title>
     <script>
@@ -18,13 +19,16 @@
     </script>
 </head>
 <body>
-    <form name="loginForm" action="list.html" onsubmit="return true">
-        <input type="text" name="userid" placeholder="用户名">
-        <br/>
-        <input type="password" name="pass" placeholder="密码">
-        <br/>
-        <input type="button" value="登录" onclick="login()">
-        <a href="register.html"><INPUT name="registerButton" id="Button" type="button" value="注册"></a>
-    </form>
+    <div class="loginDiv">
+        <p>测试账号:a 密码:a</p>
+        <form name="loginForm" action="list.html" onsubmit="return true" class="loginform">
+            <input type="text" name="userid" placeholder="用户名">
+            <br/>
+            <input type="password" name="pass" placeholder="密码">
+            <br/>
+            <input type="button" value="登录" onclick="login()">
+            <a href="register.html"><INPUT name="registerButton" id="Button" type="button" value="注册"></a>
+        </form>
+    </div>
 </body>
 </html>
