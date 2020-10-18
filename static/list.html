@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>通讯录列表</title>
 </head>
 <body>
-    <table border="1" name="teleList">
+    <table border="1" class="table table-hover table-bordered" id="mytable">
         <tr>
             <th>姓名</th>
             <th>电话</th>
@@ -14,17 +18,15 @@
             <th>QQ</th>
         </tr>
         <tr>
-            <td>元智</td>
-            <td>..</td>
-            <td>..</td>
-            <td>..</td>
-            <td>Q..</td>
+            <td>元直</td>
+            <td>18177399238</td>
+            <td>1721375481@qq.com</td>
+            <td>北京邮电大学</td>
+            <td>1721375491</td>
+            <td><input type="button" value="编辑" class="btn btn-primary" id="reset"></td>
+            <td><input type="button" value="删除" class="btn btn-info" ></td>
         </tr>
     </table>
-    <a href="add.html"><input type="button" value="添加"></a>
-    <br>
-    <input type="button" value="编辑">
-    <br/>
-    <input type="button" value="删除">
+    <a href="add.html"><input type="button" value="添加" class="btn btn-success"></a>
 </body>
 </html>
